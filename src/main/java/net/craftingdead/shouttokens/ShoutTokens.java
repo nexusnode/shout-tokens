@@ -33,7 +33,7 @@ public class ShoutTokens {
   public ShoutTokens() {
     instance = this;
 
-    ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, ShoutTokensConfig.SPEC);
+    ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ShoutTokensConfig.SPEC);
     this.tokenManager = TokenManager.load(SHOUT_TOKENS_PATH);
 
     var forgeBus = MinecraftForge.EVENT_BUS;
